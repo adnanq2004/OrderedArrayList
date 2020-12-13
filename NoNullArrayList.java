@@ -6,8 +6,8 @@ public class NoNullArrayList<T> extends ArrayList<T>{
 		super();
 	}
 
-	public NoNullArrayList(int StartingCapacity) {
-		super(StartingCapacity);
+	public NoNullArrayList(int startingCapacity) {
+		super(startingCapacity);
 	}
 
 	public boolean add(T element) {
