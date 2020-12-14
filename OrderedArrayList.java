@@ -15,7 +15,12 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 				place = i;
 			}
 		}
-		super.add(place, element);
+		if (place == -1000) {
+			super.add(element);
+		}
+		else {
+			super.add(place, element);
+		}
 		return true;
 	}
 
